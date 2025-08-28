@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test File</title>
+  </head>
+  <body>
+    <audio controls>
+      <source src="./media/SIKE PHONK_v4.mp3" />
+    </audio>
+
+    <video controls>
+      <!-- webm - формат більш пріоритетний, бо має меншу вагу без втрати якості. але не всі браузери можуть його відобразити, тому даємо два формати, а щоб браузер зрозумів де який, вказуємо type -->
+      <source src="./media/TAMURAI-SIKE-PHONK.webm" type="video/webm" />
+      <source src="./media/TAMURAI - SIKE PHONK.mp4" type="video/mp4" />
+    </video>
+
+    <table>
+      <caption>
+        <!-- caption - заголовок для таблиць -->
+        Зпшки натовців
+      </caption>
+      <thead>
+        <!-- tr - рядки таблиці -->
+        <tr>
+          <!-- th - кількість клітинок з даними -->
+          <th>№</th>
+          <th>Full name</th>
+          <th>Position</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- td - клітинки з даними -->
+          <td>1</td>
+          <td>Bill Gates</td>
+          <td>Founder Microsoft</td>
+          <td>$1000</td>
+          <!-- rowspan="2" - атрибут, щоб зайняти два рядки, чи скыльки вкажеш. але при цьому треба не прописувати ці колонки у інших рядках
+           
+          colspan - для обʼєднання рядків -->
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Steve Jobs</td>
+          <td>Founder Apple</td>
+          <!-- <td>$1200</td> -->
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry Page</td>
+          <td>Founder Google</td>
+          <td>$1100</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mark Zuckeberg</td>
+          <td>Founder Facebook</td>
+          <td>$1300</td>
+        </tr>
+      </tbody>
+      <!-- <tfoot> - футер
+        <tr>
+            <td></td>
+        </tr>
+      </tfoot> -->
+    </table>
+    <!-- iframe  - вставляє одну сторінку в іншу. наприклад мапу чи відео з ютубу -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15397.327363461847!2d35.031046507277296!3d48.46913835945844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1756280525809!5m2!1sru!2sua"
+      width="600"
+      height="450"
+    >
+    </iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/2PuFyjAs7JA?si=CHtDhdwBt6fROjKY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
