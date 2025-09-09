@@ -26,33 +26,42 @@
         <!-- logo and menu -->
         <ul>
           <!-- для посилання можна встановити атрибут "target="_blank"", який буде відкривати це посилання у новій вкладці -->
-          <li><a href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
           <!-- href="#traditions-section" - переносить нас на секцію з таким самим id - id="traditions-section". як відкрити іншу сторінку, я поки хз, але якшо там прописати "./test.html" - то воно переносить на цю адресу. може це і вірно -->
-          <li><a href="#chefs-section">Шеф-кухарі</a></li>
-          <li><a href="#formats-section">Формати</a></li>
-          <li><a href="#contact-section">Контакти</a></li>
+          <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#formats-section">Формати</a></li>
+          <li><a class="link" href="#contact-section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="submit">Замовити дзвінок</button>
+      <button class="button" type="button">Замовити дзвінок</button>
       <!-- submit - якщо ця кнопка не просто змінює тему, чи вікриває статус-бар, а відправляє дані на сервер, наприклад. в випадку, якшо вона вікриває статус-бар, чи змінює тему сайту, або відкриває інше вікно - type="button" -->
       <!-- button "Замовити дзвінок" -->
     </header>
     <main>
-      <section>
+      <section class="main-section">
         <!-- секція - це окремі блоки сайту -->
-        <h1>Сучасна пекарня</h1>
+        <h1 class="hero-title" id="main-title">
+          <span class="accent">Сучасна</span> пекарня
+        </h1>
+
+        <!-- hero - у розробці так помічають головну секцію -->
+
+        <!-- span - виключно для додаткової стилізації -->
+
+        <!-- class - додаємо, щоб застосувати правило css саме до цього елементу -->
+        <!-- id - атрибут "ідентифікатор". задають для реалізації посилань, або для java script. для css майже не використовують -->
         <!-- h1 - це головний і найбільший заголовок. він може бути лише один. найбільший - це не про розмір, а про семантику.
        
       у кожній секції має бути заголовок -->
       </section>
 
       <section id="traditions-section">
-        <ul>
+        <ul class="advantages-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h2>Новий формат традицій</h2>
+        <h2 class="section-title">Новий формат традицій</h2>
         <p>
           <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
           зберегла смак традиційної випічки та натуральність інгредієнтів.
@@ -70,7 +79,9 @@
       </section>
 
       <section id="chefs-section">
-        <h2>Наші найкращі шеф-кухарі</h2>
+        <h2 class="section-title">
+          Наші найкращі <span class="accent">шеф-кухарі</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -99,7 +110,7 @@
       </section>
 
       <section id="formats-section">
-        <h2>Формати</h2>
+        <h2 class="section-title">Формати</h2>
         <!-- якщо основна мова, як зараз, стоїть українська, то в тих випадках, коли будь який текст іншої мови, йому обовʼязково треба прописати "lang=en" - якшо англійська. мову треба прописувати, щоб сайт міг запропонувати переклад, якшо потрібно -->
         <ul>
           <li>
@@ -121,7 +132,7 @@
       </section>
 
       <section id="contact-section">
-        <h2>Приєднуйся до мережі пекарень</h2>
+        <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1756280746298!5m2!1sru!2sua"
           width="603"
