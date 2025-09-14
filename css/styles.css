@@ -1,6 +1,90 @@
+/* noto-sans-100 - cyrillic_cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/noto-sans-v41-cyrillic_cyrillic-ext_latin-100.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-200 - cyrillic_cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/noto-sans-v41-cyrillic_cyrillic-ext_latin-200.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-300 - cyrillic_cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/noto-sans-v41-cyrillic_cyrillic-ext_latin-300.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-regular - cyrillic_cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/noto-sans-v41-cyrillic_cyrillic-ext_latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-500 - cyrillic_cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/noto-sans-v41-cyrillic_cyrillic-ext_latin-500.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-600 - cyrillic_cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/noto-sans-v41-cyrillic_cyrillic-ext_latin-600.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-700 - cyrillic_cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/noto-sans-v41-cyrillic_cyrillic-ext_latin-700.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-800 - cyrillic_cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/noto-sans-v41-cyrillic_cyrillic-ext_latin-800.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-900 - cyrillic_cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/noto-sans-v41-cyrillic_cyrillic-ext_latin-900.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* CSS-змінні. Сюди покладемо значення, яке будемо використовувати багато разів. Робимо псевдоклас :root (або можна html, але вони різні за вагою). Частіше всього сюди кладуть колір. Можливо це правильно по синтаксису, але можна виділити потрібне слово, натиснути cmd+shift+l і вс код виділить всі такі ж самі слова.
 
 Коротше треба всюди писати var(--color-brand-light)
+
+Також може називатися - costum properties
 
 Урок 6 - 1:16:05 - охі жопа))
 */
@@ -16,8 +100,16 @@
 
 body {
   color: var(--color-primary-dark);
+  font-family: "noto sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
 
   /* І тепер весь текст одного кольору, і не потрібно редагувати кожну секцію */
+}
+
+a {
+  font-style: normal;
 }
 
 ul {
@@ -52,6 +144,7 @@ ul {
   border: 2px solid var(--color-brand-light);
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
   /* cursor - зміна вигляду курсору при наведенні на елемент */
 }
 
@@ -94,16 +187,22 @@ ul {
 
 .link {
   color: var(--color-primary-light);
+  text-decoration: none;
 }
 
 .link:hover {
   color: var(--color-brand-light);
+  font-weight: 600;
 }
 
 /* hero section */
 
 .hero-title {
   color: var(--color-primary-light);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 700;
+  /* font-weight - пишу 700, бо дизайнер дибіл. У фігмі пише, що вага 900, хоча візуально, для цього шрифту, це вага 700, тому залишаю так. */
 }
 
 .hero-title .accent {
@@ -112,11 +211,85 @@ ul {
 
 /* advantages section */
 
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
 .advantages-list {
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
 }
 
+.section-title {
+  font-size: 64px;
+  line-height: 1.3;
+}
+
 .section-title .accent {
   color: var(--color-brand-dark);
+}
+
+/* Traditions Section */
+.traditions-text .brand-uppercase {
+  color: var(--color-brand-light);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.traditions-text .brand {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+
+/* Chef Section */
+
+.chef-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* Formats Section */
+
+.format-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.format-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Footer */
+
+.adress-link a {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.adress-link a:hover {
+  color: var(--color-brand-light);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.adress-link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.adress-link:hover {
+  color: var(--color-brand-light);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.adress-copyright {
+  font-size: 14px;
+  font-style: normal;
 }
